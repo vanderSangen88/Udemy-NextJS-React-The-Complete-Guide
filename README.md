@@ -46,3 +46,13 @@ npx create-react-app 02_react-app
 ```code
 npm start
 ```
+### 29. Introducing State
+
+> "useState" is a React hook, and can only be called directly in React component functions or custom React Hooks.
+
+useState always returns an array with 2 elements. The first element is the current state's snapshot. The second element is a function that allows you to change the value. Not by assigning but by calling this function.
+
+### 31. Adding Routing
+
+The "react-router-dom"-package allows us to add routing functionality to React; it handles URL's without fetching new HTML pages.
+
