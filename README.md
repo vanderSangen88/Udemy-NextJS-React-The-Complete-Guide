@@ -52,7 +52,20 @@ npm start
 
 useState always returns an array with 2 elements. The first element is the current state's snapshot. The second element is a function that allows you to change the value. Not by assigning but by calling this function.
 
-### 31. Adding Routing
+### 32. Adding Routing
 
 The "react-router-dom"-package allows us to add routing functionality to React; it handles URL's without fetching new HTML pages.
+### 33. Adding Links & Navigation
+
+The "react-router-dom"-package provides a `Link`-component.
+It will render a anchor-tag but internally React Router DOM attaches a click-listener to the tag which will prevent that browser default of sending a request.
+Instead it parses the URL defined, changes it into the addressbar and load the appropriate components.
+
+```js
+<Link to="/">All Meetups</Link>
+```
+
+### 39. Getting User Input & Handling Form Submission
+
+
 
