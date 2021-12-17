@@ -1,8 +1,24 @@
+import { useHistory } from "react-router-dom";
+
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 const NewMeetupPage = () => {
+  const history = useHistory();
+
   const addMeetupHandler = (meetupData) => {
-    // send HTTP-request
+    // store data
+    // fetch(URL, {
+    // method: 'POST',
+    // body: JSON.stringify(meetupData)
+    // headers: {
+    // 'Content-Type': 'application/json'
+    // }
+    // });
+    console.warn(`No database connected`);
+    console.table(meetupData);
+
+    //
+    history.replace("/");
   };
 
   return (
