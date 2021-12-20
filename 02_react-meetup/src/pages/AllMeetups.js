@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_DATA = [
@@ -22,10 +23,31 @@ const DUMMY_DATA = [
 ];
 
 const AllMeetupsPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedMeetups, setLoadedMeetups] = useState(DUMMY_DATA);
+
+  useEffect(() => {
+    // fetch(URL)
+    // .then(response => {
+    //   return response.json();
+    // }).then(data => {
+    setIsLoading(false);
+    // setLoadedMeetups(DUMMY_DATA);
+    // });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section>
+        <p>Loading</p>
+      </section>
+    );
+  }
+
   return (
     <div>
       <h1>All Meetups</h1>
-      <MeetupList meetups={DUMMY_DATA} />
+      <MeetupList meetups={loadedMeetups} />
     </div>
   );
 };

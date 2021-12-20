@@ -126,3 +126,17 @@ function AllMeetupsPage() {
   );
 }
 ```
+
+### 42. Navigating Programmatically
+
+```js
+import { useHistory } from "react-router-dom";
+```
+
+### 45 - 48. Introducing React Context
+
+---
+
+---
+
+---
