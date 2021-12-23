@@ -140,3 +140,9 @@ import { useHistory } from "react-router-dom";
 ---
 
 ---
+
+## Section 3: Pages & File-based Routing
+
+### 53. What is "File-based Routing"? And Why Is It Helpful?
+
+With NextJS we create React-component files in a special `pages` folder and then let NextJS infer the routes from the folder structure
