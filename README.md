@@ -146,3 +146,60 @@ import { useHistory } from "react-router-dom";
 ### 53. What is "File-based Routing"? And Why Is It Helpful?
 
 With NextJS we create React-component files in a special `pages` folder and then let NextJS infer the routes from the folder structure
+
+---
+
+---
+
+---
+
+## Section 4: Project Time - Working with File-based Routing
+
+---
+
+---
+
+---
+
+## Section 5: Page Pre-Rendering & Data Fetching
+
+### 88. Introducing Static Generation with "getStaticProps"
+
+#### Static Generation
+
+Pre-generate a page (with data prepared on the server-side) during build time.  
+Pages are prepared ahead to time and can be cached by the server / CDN serving the app.
+
+```js
+export async function getStaticProps(context) {...}
+```
+
+This function can be added to any "page"-file and export it. Then NextJS will pre-generate the page.
+
+### 93. Utilizing Incremental Static Regeneration (ISR)
+
+Pre-Re-generate it on every request, at most every X seconds.
+
+```js
+export async function getStaticProps() {
+  ...
+
+  return {
+    props: {
+      ...
+    },
+    revalidate: 60, // every minute
+  };
+}
+```
+
+### 97.Introducing "getStaticPaths" For Dynamic Pages
+
+#### Pre-Generated Paths (Routes)
+
+Dynamic pages (`[id.js]` etc) don't just need data: You also need to know which `[id]` values will be available.
+Multiple concrete [id] page instances (e.g. id = 1, id = 2 etc) are pre-generated
+
+```js
+export async function getStaticPaths() {...}
+```
