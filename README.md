@@ -193,7 +193,7 @@ export async function getStaticProps() {
 }
 ```
 
-### 97.Introducing "getStaticPaths" For Dynamic Pages
+### 97. Introducing "getStaticPaths" For Dynamic Pages
 
 #### Pre-Generated Paths (Routes)
 
@@ -203,3 +203,27 @@ Multiple concrete [id] page instances (e.g. id = 1, id = 2 etc) are pre-generate
 ```js
 export async function getStaticPaths() {...}
 ```
+
+### 100. Working with Fallback Pages
+
+Can be set to true or "blocking" and determine which pages we want to prefetch.
+Not pregenerate low-visited pages.
+
+1. true:
+   Return fallback-state:
+
+```js
+if (!product) {
+  return <p>Loading...</p>;
+}
+```
+
+2. "blocking" is just like old websites, takes longer to load.
+
+### 103. Introducing "getServerSideProps" for Server-side Rendering (SSR)
+
+```js
+export async function getServerSideProps() { ... }
+```
+
+Use either `getStaticProps` OR `getServerSideProps` because they clash.
