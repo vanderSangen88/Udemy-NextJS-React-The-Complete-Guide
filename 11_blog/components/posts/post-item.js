@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const PostItem = ({ title, image, excerpt, date, slug }) => {
-  const formattedDate = new Date(date).toLocaleDateString("es-US", {
+  const formattedDate = new Date(date).toLocaleDateString("nl-NL", {
     day: "numeric",
     month: "long",
     year: "numeric",
