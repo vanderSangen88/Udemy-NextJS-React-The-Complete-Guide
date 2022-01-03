@@ -8,7 +8,8 @@ const HomePage = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Max' Blog</title>
+        <meta name="description" content="Bla bla bla" />
       </Head>
       <Hero />
       <FeaturedPosts posts={posts} />
