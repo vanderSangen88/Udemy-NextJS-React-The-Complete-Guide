@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import {
+  AzureMediaPlayerAuto,
+  AzureMediaPlayerManual,
+} from "../components/AzureMediaPlayer";
 import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_DATA = [
@@ -47,6 +51,12 @@ const AllMeetupsPage = () => {
   return (
     <div>
       <h1>All Meetups</h1>
+      <div>
+        <h2>Azure Media Player Auto</h2>
+        <AzureMediaPlayerAuto />
+        <h2>Azure Media Player Manual</h2>
+        <AzureMediaPlayerManual />
+      </div>
       <MeetupList meetups={loadedMeetups} />
     </div>
   );
