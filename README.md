@@ -169,6 +169,8 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ### 82. Extracting Data on the Catch-All Page
 
+### 83. Final Steps
+
 ---
 
 ---
