@@ -167,6 +167,8 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ### 81. Navigating to the "Filtered Events" Page Programmatically
 
+### 82. Extracting Data on the Catch-All Page
+
 ---
 
 ---
