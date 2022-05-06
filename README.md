@@ -163,6 +163,8 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ### 79. Working on the "All Events" Page
 
+### 80. Adding a Filter Form for Filtering Events
+
 ---
 
 ---
