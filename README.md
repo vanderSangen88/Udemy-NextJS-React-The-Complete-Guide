@@ -161,6 +161,8 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ### 78. Adding a General Layout Wrapper Component
 
+### 79. Working on the "All Events" Page
+
 ---
 
 ---
