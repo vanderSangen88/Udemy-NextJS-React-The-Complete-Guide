@@ -155,6 +155,10 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ## Section 4: Project Time - Working with File-based Routing
 
+### 76. Adding Buttons & Icons
+
+### 77. Adding the "Event Detail" Page (Dynamic Route)
+
 ---
 
 ---
