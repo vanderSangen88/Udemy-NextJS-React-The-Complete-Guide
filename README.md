@@ -159,6 +159,8 @@ With NextJS we create React-component files in a special `pages` folder and then
 
 ### 77. Adding the "Event Detail" Page (Dynamic Route)
 
+### 78. Adding a General Layout Wrapper Component
+
 ---
 
 ---
